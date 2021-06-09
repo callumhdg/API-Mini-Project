@@ -32,7 +32,7 @@ namespace TestLayer
         [Test]
         public void GivenThatAPingRequestIsSent_ThenPingReturnsPong()
         {
-            Assert.That(_ps.JsonResponse["ping"].ToString().ToLower(), Is.EqualTo("pong"));
+            Assert.That(_ps.JsonResponse["ping"].ToString().ToLower(), Is.EqualTo("pong!"));
         }
 
 
