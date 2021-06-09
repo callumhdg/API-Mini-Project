@@ -27,7 +27,7 @@ namespace TestLayer
 
 
             //Define the resource path
-            request.Resource = $"{path.ToLower().Replace(" ", "")}";
+            request.Resource = $"{path}";
 
             //Execute the request and store the response
             var response = await _client.ExecuteAsync(request);

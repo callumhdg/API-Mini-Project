@@ -34,4 +34,18 @@ namespace TestLayer
         public bool _explicit { get; set; }
     }
 
+    /////
+
+    public class JokeIDResponse : IResponse
+    {
+        public bool error { get; set; }
+        public string category { get; set; }
+        public string type { get; set; }
+        public string joke { get; set; }
+        public Flags flags { get; set; }
+        public int id { get; set; }
+        public bool safe { get; set; }
+        public string lang { get; set; }
+    }
+
 }
