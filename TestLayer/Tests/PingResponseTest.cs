@@ -22,5 +22,19 @@ namespace TestLayer
         {
             Assert.That(_ps.CallManager.StatusDescription,Is.EqualTo("OK")) ;
         }
+
+        [Test]
+        public void GivenThatAPingRequestIsSent_ThenErrorReturnsalse()
+        {
+            Assert.That(_ps.JsonResponse["error"].ToString().ToLower(), Is.EqualTo("false"));
+        }
+
+        [Test]
+        public void GivenThatAPingRequestIsSent_ThenPingReturnsPong()
+        {
+            Assert.That(_ps.JsonResponse["ping"].ToString().ToLower(), Is.EqualTo("pong"));
+        }
+
+
     }
 }
