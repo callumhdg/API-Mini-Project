@@ -6,7 +6,7 @@
 
 ###### Kanban board at start of sprint
 
-![sprint 1 backlog before](images/sprint1Before (2).PNG)
+![sprint 1 backlog before](images/sprint1Before.PNG)
 
 
 
