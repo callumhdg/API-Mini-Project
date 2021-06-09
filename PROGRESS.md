@@ -44,7 +44,7 @@
 
 ###### Kanban board at start of sprint
 
-![sprint 1 backlog after](images\sprint1After.PNG)
+![sprint 1 backlog after](images/sprint1After.PNG)
 
 ###### Sprint review
 
