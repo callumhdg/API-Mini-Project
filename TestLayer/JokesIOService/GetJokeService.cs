@@ -23,9 +23,9 @@ namespace TestLayer
             JokeDTO = new DTO<JokeIDResponse>();
         }
 
-        public async Task MakeRequestAsync()
+        public async Task MakeRequestAsync(int id)
         {
-            JokeResponse = await CallManager.MakeJokeRequestAsync($"joke/any?idRange=0");
+            JokeResponse = await CallManager.MakeJokeRequestAsync($"joke/any?idRange={id}");
 
             JsonResponse = JObject.Parse(JokeResponse);
 
