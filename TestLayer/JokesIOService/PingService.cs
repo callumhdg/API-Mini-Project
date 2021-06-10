@@ -25,7 +25,7 @@ namespace TestLayer
 
         public async Task MakeRequestAsync()
         {
-            PingResponse = await CallManager.MakeJokeRequestAsync($"ping");
+            PingResponse = await CallManager.MakeRequestAsync($"ping");
 
             JsonResponse = JObject.Parse(PingResponse);
 

@@ -56,13 +56,13 @@ namespace TestLayer
         }
 
         [Test]
-        public void GivenThatAValidCategoryRequestIsSent_ForthCategoryIsAny()
+        public void GivenThatAValidCategoryRequestIsSent_FourthCategoryIsAny()
         {
             Assert.That(_cs.JsonResponse["categories"][3].ToString().ToLower(), Is.EqualTo("dark"));
         }
 
         [Test]
-        public void GivenThatAValidCategoryRequestIsSent_FithCategoryIsPun()
+        public void GivenThatAValidCategoryRequestIsSent_FifthCategoryIsPun()
         {
             Assert.That(_cs.JsonResponse["categories"][4].ToString().ToLower(), Is.EqualTo("pun"));
         }
