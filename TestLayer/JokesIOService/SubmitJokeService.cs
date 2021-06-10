@@ -28,7 +28,5 @@ namespace TestLayer
 
             JokeDTO.DeserializeResponse(submitJokeResponse);
         }
-
-
     }
 }
