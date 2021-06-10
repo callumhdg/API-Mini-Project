@@ -48,4 +48,18 @@ namespace TestLayer
         public string lang { get; set; }
     }
 
+    public class CategoryResponse : IResponse
+    {
+        public bool error { get; set; }
+        public string[] categories { get; set; }
+        public Categoryalias[] categoryAliases { get; set; }
+        public long timestamp { get; set; }
+    }
+
+    public class Categoryalias
+    {
+        public string alias { get; set; }
+        public string resolved { get; set; }
+    }
+
 }
