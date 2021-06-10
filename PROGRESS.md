@@ -62,7 +62,7 @@ For the next sprint, we would spent more time on planning and communication. Dur
 
 ###### Kanban board at start of sprint
 
-![sprint 1 backlog before](images/sprint2Before.PNG)
+![sprint 1 backlog before](images/sprint2before.PNG)
 
 
 
@@ -83,7 +83,7 @@ For the next sprint, we would spent more time on planning and communication. Dur
 
 ###### Kanban Board at end of sprint
 
-![sprint 1 backlog after](images/sprint2After.PNG)
+![sprint 1 backlog after](images/sprint2after.PNG)
 
 ###### Sprint Review
 
