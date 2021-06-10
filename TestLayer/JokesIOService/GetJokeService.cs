@@ -25,7 +25,7 @@ namespace TestLayer
 
         public async Task MakeRequestAsync(int id)
         {
-            JokeResponse = await CallManager.MakeJokeRequestAsync($"joke/any?idRange={id}");
+            JokeResponse = await CallManager.MakeRequestAsync($"joke/any?idRange={id}");
 
             JsonResponse = JObject.Parse(JokeResponse);
 

@@ -22,7 +22,7 @@ namespace TestLayer
 
         public async Task SubmitJokeRequestAsync(JObject body)
         {
-            submitJokeResponse = await CallManager.SubmitJokeRequestAsync("submit", body);
+            submitJokeResponse = await CallManager.MakeRequestAsync("submit", body);
 
             JsonResponse = JObject.Parse(submitJokeResponse);
 

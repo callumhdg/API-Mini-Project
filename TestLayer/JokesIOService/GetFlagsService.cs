@@ -25,7 +25,7 @@ namespace TestLayer
 
         public async Task MakeRequestAsync()
         {
-            FlagResponse = await CallManager.MakeJokeRequestAsync($"flags");
+            FlagResponse = await CallManager.MakeRequestAsync($"flags");
 
             JsonResponse = JObject.Parse(FlagResponse);
 

@@ -24,7 +24,7 @@ namespace TestLayer
         }
 
         [Test]
-        public void GivenThatAPingRequestIsSent_ThenErrorReturnsalse()
+        public void GivenThatAPingRequestIsSent_ThenErrorReturnsFalse()
         {
             Assert.That(_ps.JsonResponse["error"].ToString().ToLower(), Is.EqualTo("false"));
         }

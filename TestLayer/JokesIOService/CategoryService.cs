@@ -25,7 +25,7 @@ namespace TestLayer
 
         public async Task MakeRequestAsync()
         {
-            CategoryResponse = await CallManager.MakeJokeRequestAsync("categories");
+            CategoryResponse = await CallManager.MakeRequestAsync("categories");
 
             JsonResponse = JObject.Parse(CategoryResponse);
 
