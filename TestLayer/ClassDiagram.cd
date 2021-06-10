@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TestLayer.PingResponse" BaseTypeListCollapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAABAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestLayer.JokeResponse" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAABAQAAAAAIAAQAAAQ=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="flags" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestLayer.Flags">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAQAAAAAAAAIAABAAAIEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestLayer.JokeIDResponse" BaseTypeListCollapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAEAEAAAAAABAAAAAAAIAAQAAgQ=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="flags" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestLayer.CategoryResponse" BaseTypeListCollapsed="true">
+    <Position X="1" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAQAgAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="categoryAliases" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestLayer.Categoryalias">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestLayer.FlagsResponse" BaseTypeListCollapsed="true">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>JokesIOService\DataHandling\Model.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TestLayer.CategoryService">
+    <Position X="7.25" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAACAAAAAAAAAAAAAQAAAAAAAIAAIA=</HashCode>
+      <FileName>JokesIOService\CategoryService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CategoryDTO" />
+      <Property Name="CallManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.GetFlagsService">
+    <Position X="9.75" Y="2.25" Width="1.75" />
+    <AssociationLine Name="CallManager" Type="TestLayer.CallManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.055" Y="0.122" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACgAAAACAACAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>JokesIOService\GetFlagsService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="FlagsDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.GetJokeService">
+    <Position X="12.25" Y="2.25" Width="1.75" />
+    <AssociationLine Name="CallManager" Type="TestLayer.CallManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.125" Y="2.25" />
+        <Point X="13.125" Y="1.312" />
+        <Point X="11.5" Y="1.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="JokeDTO" Type="TestLayer.DTO&lt;ResponseType&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.125" Y="4.19" />
+        <Point X="13.125" Y="4.875" />
+        <Point X="11.25" Y="4.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAkAAAACAgAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>JokesIOService\GetJokeService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="JokeDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.PingService">
+    <Position X="8.25" Y="6" Width="1.75" />
+    <AssociationLine Name="CallManager" Type="TestLayer.CallManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="6.625" />
+        <Point X="7.034" Y="6.625" />
+        <Point X="7.034" Y="0.726" />
+        <Point X="10.25" Y="0.726" />
+        <Point X="10.25" Y="1" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.04" Y="0.345" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAICAAAAAEAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>JokesIOService\PingService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="PingDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.SubmitJokeService">
+    <Position X="13" Y="6" Width="2" />
+    <AssociationLine Name="CallManager" Type="TestLayer.CallManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="6" />
+        <Point X="14.5" Y="0.701" />
+        <Point X="11.188" Y="0.701" />
+        <Point X="11.188" Y="1" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.947" Y="0.35" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="JokeDTO" Type="TestLayer.DTO&lt;ResponseType&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.188" Y="6" />
+        <Point X="13.188" Y="5.25" />
+        <Point X="11.25" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAgAAAAAAAAAABAAAEAAAAIAAAA=</HashCode>
+      <FileName>JokesIOService\SubmitJokeService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CallManager" />
+      <Property Name="JokeDTO" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.DTO&lt;ResponseType&gt;" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <AssociationLine Name="IResponse" Type="TestLayer.IResponse">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.921" Y="0.154" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\DTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IResponse" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TestLayer.CallManager" Collapsed="true">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\HTTPManager\CallManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TestLayer.IResponse" Collapsed="true">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JokesIOService\DataHandling\IResponse.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
