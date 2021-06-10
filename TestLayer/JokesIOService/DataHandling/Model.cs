@@ -34,7 +34,6 @@ namespace TestLayer
         public bool _explicit { get; set; }
     }
 
-    /////
 
     public class JokeIDResponse : IResponse
     {
@@ -61,5 +60,14 @@ namespace TestLayer
         public string alias { get; set; }
         public string resolved { get; set; }
     }
+
+
+    public class FlagsResponse : IResponse
+    {
+        public bool error { get; set; }
+        public string[] flags { get; set; }
+        public long timestamp { get; set; }
+    }
+
 
 }
